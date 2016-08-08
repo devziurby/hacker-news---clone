@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+body, html {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#hero {
+	text-align: center;
+	font-size: 100px;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #E91E63;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #F06292;
+    
+
+}
+
+.btn-primary {
+	background-color: #E91E63;
+	border-radius: 0px;
+	padding: 10px 30px;
+	border-color: #E91E63;
+}
+
+.btn-primary:hover {
+	background-color: #F06292;
+	border-color: #F06292;
+	
+}
+
+.btn-primary:active {
+	background-color: #F06292;
+	border-color: #F06292;
+	
+}
+
+#logo {
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding: 15px 0;
+	a {
+		color: white;
+		text-decoration: none;
+
+	}
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+#logo:hover {
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding: 15px 0;
+	a {
+		color: white;
+		text-decoration: none;
+
+	}
+}
+
+.navbar-default {
+	background-color: #039BE5;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    font-weight: 700;
+    color: white;
+}
+
+#main_content {
+	#content {
+		float: none;
+	}
+	padding-bottom: 100px;
+	.link {
+		padding: 2em 1em;
+		border-bottom: 1px solid #e9e9e9;
+		.title {
+
+			a {
+				color: #FF4500;
+
+			}
+		}
+	}
+	.comments_title {
+		margin-top: 2em;
+	}
+	#comments {
+		.comment {
+			padding: 1em 0;
+			border-top: 1px solid #E9E9E9;
+			.lead {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
